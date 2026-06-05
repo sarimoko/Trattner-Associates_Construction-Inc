@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trattner & Associates Construction Inc.</title>
+    <style>
+        /* Modern Construction Theme Pallet */
+        :root {
+            --primary: #2b2d42; /* Deep Charcoal */
+            --secondary: #f4a261; /* Safety/Construction Orange-Gold */
+            --text-dark: #1d3557;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            color: var(--text-dark);
+            background-color: var(--white);
+            line-height: 1.6;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--secondary);
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--secondary);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(43, 45, 66, 0.85), rgba(43, 45, 66, 0.85)), 
+                        url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070') center/cover no-repeat;
+            color: var(--white);
+            padding: 120px 5% 80px 5%;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+            color: #e0e0e0;
+        }
+
+        .cta-btn {
+            background-color: var(--secondary);
+            color: var(--primary);
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: transform 0.2s, background-color 0.3s;
+            display: inline-block;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            background-color: #e76f51;
+        }
+
+        /* Lead Intake & Download Section */
+        .intake-section {
+            padding: 60px 5%;
+            background-color: var(--light-bg);
+            text-align: center;
+        }
+
+        .intake-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 5px solid var(--secondary);
+        }
+
+        .intake-container h3 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .intake-container p {
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .download-box {
+            border: 2px dashed #ccc;
+            padding: 30px;
+            border-radius: 6px;
+            background-color: #fafafa;
+            margin-bottom: 20px;
+        }
+
+        /* Services Grid */
+        .services {
+            padding: 60px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .services h3 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--light-bg);
+            padding: 30px;
+            border-radius: 6px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .card h4 {
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            color: #a0a0a0;
+            text-align: center;
+            padding: 40px 5%;
+            font-size: 0.9rem;
+            border-top: 3px solid var(--secondary);
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 768px) {
+            header { flex-direction: column; text-align: center; }
+            nav { margin-top: 15px; }
+            nav a { margin: 0 10px; }
+            .hero h2 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Trattner & Associates <span>Construction Inc.</span></h1>
+        </div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#intake">Get a Quote</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Quality Craftsmanship, Trusted Management.</h2>
+        <p>From pre-construction contracts and safety-compliant management to the final build, we ensure your project is executed flawlessly, safely, and on time.</p>
+        <a href="#intake" class="cta-btn">Start Your Project Intake</a>
+    </section>
+
+    <section class="services" id="services">
+        <h3>Our Core Expertise</h3>
+        <div class="grid">
+            <div class="card">
+                <h4>Commercial & Residential</h4>
+                <p>Full-scale general contracting, structural modifications, and premium modern renovations built to last.</p>
+            </div>
+            <div class="card">
+                <h4>Rigorous Project Admin</h4>
+                <p>Meticulous handling of construction contracts, zoning, permits, and vendor management to keep jobs on track.</p>
+            </div>
+            <div class="card">
+                <h4>Safety & Compliance</h4>
+                <p>Every job site adheres to strict OSHA regulations, comprehensive safety training protocols, and risk assessments.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="intake-section" id="intake">
+        <div class="intake-container">
+            <h3>Ready to Build?</h3>
+            <p>To streamline your consultation, please download our Project Intake Form, fill out your project details, and email it directly back to our administrative office.</p>
+            
+            <div class="download-box">
+                <a href="intake-form.pdf" download="Trattner_Construction_Intake_Form.pdf" class="cta-btn">
+                    📥 Download Project Intake PDF
+                </a>
+            </div>
+            
+            <p style="font-size: 0.9rem; color: #666;">
+                Once completed, email the form to: <strong>admin@trattnerconstruction.com</strong><br>
+                <span style="font-style: italic;">(Note: This domain is a placeholder sample for demonstration purposes)</span>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Trattner & Associates Construction Inc. All rights reserved.</p>
+        <p>Proudly showcasing streamlined admin, contracts, and safety-first field construction.</p>
+    </footer>
+
+</body>
+</html>
